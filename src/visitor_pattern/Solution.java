@@ -223,7 +223,7 @@ public class Solution {
 			// build treenodes with an initial 0 depth
 			for (int nodeDepth = 1; nodeDepth < numberOfNodes; nodeDepth++) {
 				treeNodes.add(
-						new TreeNode(getNodeValue(nodeValues[nodeDepth]), getColorValue(colorValues[nodeDepth]), 0));
+						new TreeNode(getNodeValue(nodeValues[nodeDepth]), getColorValue(colorValues[nodeDepth]), nodeDepth));
 			}
 			String[] edgeDepths = { "1 2", "1 3", "3 4", "3 5" };
 			System.out.println(Arrays.toString(edgeDepths));
